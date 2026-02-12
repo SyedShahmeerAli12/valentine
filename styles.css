@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+  min-height: 100vh;
+}
+
+.view.hidden {
+  display: none;
+}
+
+.bear-img {
+  height: 200px;
+  object-fit: contain;
+}
+
+#yes-view img {
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.success-text {
+  margin: 1rem 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#yes-btn {
+  background-color: #22c55e;
+  color: white;
+}
+
+#yes-btn:hover {
+  background-color: #15803d;
+}
+
+#no-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+#no-btn:hover {
+  background-color: #b91c1c;
+}
