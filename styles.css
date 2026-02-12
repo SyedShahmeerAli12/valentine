@@ -27,6 +27,7 @@ body {
   justify-content: center;
   margin-top: -4rem;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .view.hidden {
@@ -58,9 +59,13 @@ body {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
+  max-width: 100%;
+  padding: 0 0.5rem;
 }
 
 button {
@@ -71,6 +76,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: background-color 0.2s;
+  flex-shrink: 0;
 }
 
 #yes-btn {
