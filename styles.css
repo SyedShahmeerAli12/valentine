@@ -82,6 +82,10 @@ button {
 #yes-btn {
   background-color: #22c55e;
   color: white;
+  white-space: nowrap;
+  padding: 0.25em 0.6em;
+  width: auto;
+  min-width: min-content;
 }
 
 #yes-btn:hover {
@@ -109,11 +113,16 @@ button {
   }
 
   .buttons button {
-    width: 100%;
     min-height: 48px;
   }
 
+  #yes-btn {
+    width: auto;
+    min-width: min-content;
+  }
+
   #no-btn {
+    width: 100%;
     min-width: 0;
   }
 }
