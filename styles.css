@@ -91,8 +91,29 @@ button {
 #no-btn {
   background-color: #ef4444;
   color: white;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: 1rem;
 }
 
 #no-btn:hover {
   background-color: #b91c1c;
+}
+
+/* On small screens: stack buttons so No is always visible below Yes */
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .buttons button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  #no-btn {
+    min-width: 0;
+  }
 }
