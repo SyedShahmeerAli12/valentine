@@ -64,7 +64,7 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
-  max-width: 100%;
+  max-width: min(100%, 320px);
   padding: 0 0.5rem;
 }
 
@@ -83,9 +83,10 @@ button {
   background-color: #22c55e;
   color: white;
   white-space: nowrap;
-  padding: 0.25em 0.6em;
+  padding: 0.3em 0.6em;
   width: auto;
   min-width: min-content;
+  max-width: 100%;
 }
 
 #yes-btn:hover {
@@ -104,12 +105,12 @@ button {
   background-color: #b91c1c;
 }
 
-/* On small screens: stack buttons so No is always visible below Yes */
+/* On small screens: stack buttons, both stay visible, nothing overflows */
 @media (max-width: 480px) {
   .buttons {
     flex-direction: column;
     width: 100%;
-    max-width: 280px;
+    max-width: min(100%, 280px);
   }
 
   .buttons button {
@@ -119,6 +120,7 @@ button {
   #yes-btn {
     width: auto;
     min-width: min-content;
+    max-width: 100%;
   }
 
   #no-btn {

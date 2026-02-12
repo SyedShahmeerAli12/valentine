@@ -41,6 +41,9 @@
     noCount += 1;
     noBtn.textContent = getNoButtonText();
     var size = noCount * 20 + 16;
+    if (window.innerWidth <= 480) {
+      size = Math.min(size, 42);
+    }
     yesBtn.style.fontSize = size + "px";
   });
 })();
